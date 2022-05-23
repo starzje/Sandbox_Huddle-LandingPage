@@ -1,0 +1,140 @@
+:root {
+ --clr-primary-900: hsl(257, 40%, 49%);
+ --clr-primary-300: hsl(300, 69%, 71%);
+}
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font-family: 'Open Sans', sans-serif;
+ font-family: 'Poppins', sans-serif;
+ background-image: url(/images/bg-mobile.svg);
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-color: var(--clr-primary-900);
+ color: #fff;
+ margin: 2em;
+ font-size: 1rem;
+}
+
+img {
+ width: 100%;
+}
+
+.logo {
+ width: 140px;
+ margin-bottom: 4em;
+}
+
+.hero__image {
+ margin-bottom: 3em;
+}
+
+.text {
+ text-align: center;
+}
+
+.text__paragraph {
+ margin: 1em auto;
+ max-width: 33ch;
+}
+
+.text__button {
+ background-color: #fff;
+ padding: 0.7em 5.5em;
+ font: inherit;
+ border-radius: 40px;
+ color: var(--clr-primary-900);
+ margin-top: .5em;
+ cursor: pointer;
+ box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
+ border: none;
+}
+
+.text__button:hover {
+ background-color: var(--clr-primary-300);
+ color: #fff;
+}
+
+.footer {
+ margin-top: 5em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.footer>i {
+ line-height: 40px;
+ width: 40px;
+ margin: 0.5em;
+ border: 2px solid #fff;
+ border-radius: 50%;
+}
+
+.footer>i:hover {
+ color: var(--clr-primary-300);
+ border: 2px solid var(--clr-primary-300);
+}
+
+@media only screen and (min-width:45em) {
+ body {
+  background-image: url(/images/bg-desktop.svg);
+  background-size: cover;
+  height: 100vh;
+ }
+
+ .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+ }
+
+ .hero__image {
+  max-width: 500px;
+ }
+
+ .hero {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+ }
+
+ .text {
+  text-align: start;
+ }
+
+ .text__button {
+  padding: 0.7em 3.5em;
+ }
+
+ .text__heading {
+  max-width: 20ch;
+ }
+
+ .text__paragraph {
+  margin-left: 0;
+  max-width: 50ch;
+ }
+
+ .text__button {
+  margin-left: 0;
+ }
+
+ .footer {
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+ }
+}
+
+@media only screen and (min-width:130em) {
+
+ .hero {
+  margin-top: 3em;
+ }
+
+}
