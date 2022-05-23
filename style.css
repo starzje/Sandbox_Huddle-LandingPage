@@ -12,7 +12,7 @@
 body {
  font-family: 'Open Sans', sans-serif;
  font-family: 'Poppins', sans-serif;
- background-image: url(/images/bg-mobile.svg);
+ background-image: url(./images/bg-mobile.svg);
  background-repeat: no-repeat;
  background-size: contain;
  background-color: var(--clr-primary-900);
@@ -82,7 +82,7 @@ img {
 
 @media only screen and (min-width:45em) {
  body {
-  background-image: url(/images/bg-desktop.svg);
+  background-image: url(./images/bg-desktop.svg);
   background-size: cover;
   height: 100vh;
  }
